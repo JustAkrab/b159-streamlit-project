@@ -1,10 +1,14 @@
+import os
+from dotenv import load_dotenv
 import streamlit as st
 from groq import Groq
 from online_search import web_search
 
+load_dotenv()
+
 st.title("Reda Akrab's Personal Assistance")
 
-client = Groq(api_key="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")
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 if "groq_model" not in st.session_state:
     st.session_state["groq_model"] = "openai/gpt-oss-20b"
