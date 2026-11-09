@@ -1,0 +1,25 @@
+[project]
+name = "05-weather-wisper-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Reda", email = "reda.akrab13@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = []
+
+[project.scripts]
+05-weather-wisper-project = "_05_weather_wisper_project:main"
+
+[tool.uv.build-backend]
+module-name = "_05_weather_wisper_project"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
