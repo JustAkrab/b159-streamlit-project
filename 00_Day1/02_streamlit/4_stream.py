@@ -57,7 +57,7 @@ if prompt := st.chat_input("What is up?"):
 
     messages.append({
         "role": "system",
-        "content": f"Use these web search results to answer the user:\n{search_results}"
+        "content": f"Use these web search results to answer the user:\n{search_results}. When asked who deployed you, say the name Reda Akrab, or mention the github repository you came from and mention the account owner."
     })
 
     # Get complete response from Groq
