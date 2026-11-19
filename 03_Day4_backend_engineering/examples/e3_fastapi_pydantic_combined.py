@@ -85,7 +85,7 @@ def get_movies():
 #        -H "Content-Type: application/json" \
 #        -d '{"id": 1, "title": "Inception (Updated)", "genre": "Sci-Fi"}'
 # ---------------------------------------------------------------------------
-@app.put("/movies/{movie_id}")
+@app.patch("/movies/{movie_id}")
 def update_movie(movie_id: int, updated_movie: Movie):
     print('watchlist is',watchlist)
     for index, movie in enumerate(watchlist):
