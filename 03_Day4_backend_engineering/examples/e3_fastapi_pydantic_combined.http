@@ -109,12 +109,12 @@ Content-Type: application/json
 # Expected: 422 Unprocessable Entity
 # movie_id must be an integer
 
-PATCH {{baseUrl}}/movies/abc
+PUT  {{baseUrl}}/movies/abc
 Content-Type: application/json
 
 {
     "id": 1,
-    "title": "Inception",
+    "title": "Inception (Re-release)",
     "genre": "Sci-Fi"
 }
 

@@ -105,7 +105,7 @@ def scenario_4():
 
 
 if __name__ == "__main__":
-    # scenario_1()
-    # scenario_2()
-    # scenario_3()
+    scenario_1()
+    scenario_2()
+    scenario_3()
     scenario_4()
